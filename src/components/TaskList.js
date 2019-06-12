@@ -1,14 +1,12 @@
 import React from 'react';
 import Task from './Task'
 
-const TaskList = () => {
+const TaskList = (props) => {
+    const tasks = props.tasks.map(task => <Task key={task.id} task={task} delete={props.delete} change={props.change} />)
     return (
         <>
-            <h1>Lista zadań</h1>
-            <Task />
-            <Task />
-            <Task />
-            <Task />
+            <h1>{tasks}</h1>
+
         </>
     );
 }
