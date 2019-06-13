@@ -21,6 +21,22 @@ class App extends Component {
         important: false,
         active: true,
         finishDate: null
+      },
+      {
+        id: 2,
+        text: "kupić ziemniaki",
+        date: "2019-06-26",
+        important: false,
+        active: true,
+        finishDate: null
+      },
+      {
+        id: 3,
+        text: "kupić arbuza",
+        date: "2019-06-30",
+        important: false,
+        active: true,
+        finishDate: null
       }
     ]
   }
