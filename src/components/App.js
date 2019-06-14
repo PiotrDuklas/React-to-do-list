@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AddTask from './AddTask';
 import TaskList from './TaskList'
 import './App.css';
+import './AddTask.css'
 
 class App extends Component {
   state = {
@@ -26,7 +27,7 @@ class App extends Component {
         id: 2,
         text: "kupić ziemniaki",
         date: "2019-06-26",
-        important: false,
+        important: true,
         active: true,
         finishDate: null
       },
@@ -67,7 +68,6 @@ class App extends Component {
   render() {
     return (
       <>
-        <div>Tutaj coś</div>
         <AddTask />
         <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
       </>
