@@ -40,7 +40,7 @@ class AddTask extends Component {
                 })
             }
         } else {
-            alert("ups, zesrało się")
+            alert("ups, zepsuło się")
         }
     }
     render() {
